@@ -166,6 +166,7 @@
             <div class="container">
                 <div class="section-title">
                     <h3>Palu. Teman Jasa Anda.</h3>
+                    <p>Bantuan apa yang ingin anda cari hari ini?</p>
                 </div>
 
                 <div class="featured-slides owl-carousel owl-theme">
