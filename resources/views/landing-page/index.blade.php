@@ -44,8 +44,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="javascript:void(0);">
-                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo-dark.png') }}" class="black-logo" alt="image" width="100">
-                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" class="white-logo" alt="image" width="100">
+                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="black-logo" alt="image" width="100">
+                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="white-logo" alt="image" width="100">
                             </a>
                         </div>
                     </div>
@@ -56,8 +56,8 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="javascript:void(0);">
-                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo-dark.png') }}" class="black-logo" alt="image" width="100">
-                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" class="white-logo" alt="image" width="100">
+                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="black-logo" alt="image" width="100">
+                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="white-logo" alt="image" width="100">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -464,11 +464,11 @@
                         <div class="single-footer-widget">
                             <div class="widget-logo">
                                 <a href="javascript:void(0);">
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px">
+                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
                                 </a>
                             </div>
 
-                            <p>Aplikasi penentuan kost terbaik menggunakan metode AHP dan Borda</p>
+                            <p>Aplikasi layanan jasa harian terbaik</p>
 
                             <ul class="widget-social">
                                 <li>
@@ -494,22 +494,22 @@
                             <ul class="widget-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-                                    Fakultas Ilmu Komputer, Universitas Muslim Indonesia
+                                    FMIPA, Universitas Negeri Semarang
                                 </li>
 
                                 <li>
                                     <i class='bx bxs-phone'></i>
-                                    <a href="/">+62 823-9943-1723</a>
+                                    <a href="/">+62 813-4062-6489</a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">[email&#160;protected]</span></a>
+                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">palu@email.com</span></a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-time'></i>
-                                    9 AM - 5 PM (Sun-Thur)
+                                    8.00 AM - 5.00 PM (Mon-Sat)
                                 </li>
                             </ul>
                         </div>
@@ -521,8 +521,8 @@
                 <div class="container">
                     <div class="copyright-area-content">
                         <p>
-                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by
-                            <a href="https://adhyy.my.id/" target="_blank">Adhyy</a>
+                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Teman Jasa Anda. All Rights Reserved by
+                            <a href="https://adhyy.my.id/" target="_blank">Palu</a>
                         </p>
                     </div>
                 </div>

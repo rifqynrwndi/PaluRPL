@@ -1,7 +1,7 @@
                 <!-- Footer START -->
                 <footer class="footer">
                     <div class="footer-content">
-                        <p class="m-b-0">Copyright © 2022 Penentuan Kost Terbaik. All rights reserved.</p>
+                        <p class="m-b-0">Copyright © 2022 Palu.Teman jasa anda. All rights reserved.</p>
                     </div>
                 </footer>
                 <!-- Footer END -->
