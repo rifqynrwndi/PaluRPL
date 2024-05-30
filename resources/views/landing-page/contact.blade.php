@@ -44,8 +44,8 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="javascript:void(0);">
-                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo-dark.png') }}" class="black-logo" alt="image" width="100">
-                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" class="white-logo" alt="image" width="100">
+                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="black-logo" alt="image" width="100">
+                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="white-logo" alt="image" width="100">
                             </a>
                         </div>
                     </div>
@@ -56,8 +56,8 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="javascript:void(0);">
-                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo-dark.png') }}" class="black-logo" alt="image" width="100">
-                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" class="white-logo" alt="image" width="100">
+                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="black-logo" alt="image" width="100">
+                            <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" class="white-logo" alt="image" width="100">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -66,13 +66,8 @@
                                 <li class="nav-item">
                                     <a href="{{ route('landing-page') }}" class="nav-link">Home</a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a href="{{ route('landing-page.about') }}" class="nav-link">Tentang</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="{{ route('landing-page.contact') }}" class="nav-link active">Kontak</a>
+                                    <a href="{{ route('landing-page.contact') }}" class="nav-link active">Contact</a>
                                 </li>
                             </ul>
 
@@ -121,17 +116,7 @@
         <!-- Start Page Banner Area -->
         <div class="page-banner-area">
             <div class="container">
-                <div class="page-banner-content wow animate__animated animate__fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
-                    <h2>Kontak</h2>
-
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>Halaman</li>
-                        <li>Kontak</li>
-                    </ul>
-                </div>
+                    <h2>Contact Us</h2>
             </div>
 
             <div class="page-banner-image wow animate__animated animate__fadeInRightight" data-wow-delay="300ms" data-wow-duration="2000ms">
@@ -204,22 +189,22 @@
 
                     <div class="col-lg-4 col-md-12">
                         <div class="contact-address">
-                            <h3>Alamat Kontak:</h3>
+                            <h3>Contact Address:</h3>
 
                             <ul class="address-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-                                    Fakultas Ilmu Komputer, Universitas Muslim Indonesia
+                                    FMIPA, Universitas Negeri Semarang
                                 </li>
 
                                 <li>
                                     <i class='bx bxs-phone'></i>
-                                    <a href="tel:000123456789">+62 823-9943-1723</a>
+                                    <a href="tel:000123456789">+62 822-1016-2910</a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="javascript:void(0);"><span class="__cf_email__" data-cfemail="dbb3beb7b7b49bbdb2bfb4f5b8b4b6">[email&#160;protected]</span></a>
+                                    <a href="mailto:palu@gmail.com"><span>palu@gmail.com</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -237,11 +222,11 @@
                         <div class="single-footer-widget">
                             <div class="widget-logo">
                                 <a href="javascript:void(0);">
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px">
+                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
                                 </a>
                             </div>
 
-                            <p>Aplikasi penentuan kost terbaik menggunakan metode AHP dan Borda</p>
+                            <p>Aplikasi Solusi Rumah Tangga Serba Guna </p>
 
                             <ul class="widget-social">
                                 <li>
@@ -267,22 +252,22 @@
                             <ul class="widget-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-                                    Fakultas Ilmu Komputer, Universitas Muslim Indonesia
+                                    FMIPA, Universitas Negeri Semarang
                                 </li>
 
                                 <li>
                                     <i class='bx bxs-phone'></i>
-                                    <a href="/">+62 823-9943-1723</a>
+                                    <a href="/">+62 822-1016-2910</a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">[email&#160;protected]</span></a>
+                                    <a href="mailto:palu@gmail.com"><span>palu@gmail.com</span></a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-time'></i>
-                                    9 AM - 5 PM (Sun-Thur)
+                                    8 AM - 5 PM (Mon-Sat)
                                 </li>
                             </ul>
                         </div>
@@ -294,8 +279,7 @@
                 <div class="container">
                     <div class="copyright-area-content">
                         <p>
-                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by
-                            <a href="https://adhyy.my.id/" target="_blank">Adhyy</a>
+                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by Skibidi.Inc
                         </p>
                     </div>
                 </div>
