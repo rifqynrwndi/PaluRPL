@@ -68,11 +68,11 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="{{ route('landing-page.about') }}" class="nav-link">Tentang</a>
+                                    <a href="{{ route('landing-page.about') }}" class="nav-link">About</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="{{ route('landing-page.contact') }}" class="nav-link">Kontak</a>
+                                    <a href="{{ route('landing-page.contact') }}" class="nav-link">Contact</a>
                                 </li>
                             </ul>
 
@@ -464,11 +464,11 @@
                         <div class="single-footer-widget">
                             <div class="widget-logo">
                                 <a href="javascript:void(0);">
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px">
+                                    {{-- <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px"> --}}
                                 </a>
                             </div>
 
-                            <p>Aplikasi penentuan kost terbaik menggunakan metode AHP dan Borda</p>
+                            <p>Aplikasi Solusi Rumah Tangga Serba Guna </p>
 
                             <ul class="widget-social">
                                 <li>
@@ -494,18 +494,19 @@
                             <ul class="widget-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-                                    Fakultas Ilmu Komputer, Universitas Muslim Indonesia
+                                    Kelompok SKIBIDI
                                 </li>
 
                                 <li>
                                     <i class='bx bxs-phone'></i>
-                                    <a href="/">+62 823-9943-1723</a>
+                                    <a href="/">+62 822-1016-2910a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">[email&#160;protected]</span></a>
+                                    <a href="mailto:palu@gmail.com"><span>palu@gmail.com</span></a>
                                 </li>
+
 
                                 <li>
                                     <i class='bx bx-time'></i>
@@ -521,8 +522,7 @@
                 <div class="container">
                     <div class="copyright-area-content">
                         <p>
-                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by
-                            <a href="https://adhyy.my.id/" target="_blank">Adhyy</a>
+                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by Skibidi.Inc
                         </p>
                     </div>
                 </div>

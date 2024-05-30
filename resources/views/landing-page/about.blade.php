@@ -176,11 +176,10 @@
 
                     <div class="col-lg-6 col-md-12">
                         <div class="about-content">
-                            <h3>Motif Kami adalah Memberikan yang Terbaik untuk Semua dan Memenuhi Keinginan Mereka</h3>
+                            <h3>Motif Kami adalah Memberikan yang Terbaik untuk Semua dan Memenuhi Kebutuhan Pelanggan</h3>
                             {{-- <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p> --}}
 
                             <div class="about-quote">
-                                <p>Kami selalu ingin mengembangkan fitur web ini untuk bisa memberikan yang terbaik kepada Mahasiswa yang mencari kost terdekat</p>
                                 <span>Founder & CEO - <b>{{ config('app.name') }}</b></span>
                             </div>
                         </div>
@@ -195,7 +194,7 @@
         <div class="facilities-area pt-100 pb-70">
             <div class="container">
                 <div class="section-title">
-                    <h3>Daftar Fasilitas Kost</h3>
+                    <h3>Daftar Jasa</h3>
                 </div>
 
                 <div class="row justify-content-center">

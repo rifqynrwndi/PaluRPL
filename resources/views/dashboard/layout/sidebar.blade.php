@@ -15,7 +15,7 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-appstore"></i>
                     </span>
-                    <span class="title">Informasi Kost</span>
+                    <span class="title">Informasi Jasa</span>
                 </a>
             </li>
             {{-- <li class="nav-item dropdown">
@@ -31,7 +31,7 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-file"></i>
                     </span>
-                    <span class="title">Rekomendasi Kost</span>
+                    <span class="title">Rekomendasi Jasa</span>
                 </a>
             </li>
             {{-- @if (Auth::user()->role == 'admin') --}}
@@ -66,7 +66,7 @@
                         <span class="icon-holder">
                             <i class="anticon anticon-appstore"></i>
                         </span>
-                        <span class="title">Data Kriteria</span>
+                        <span class="title">Detail Jasa</span>
                     </a>
                 </li>
                 <li class="nav-item dropdown">
