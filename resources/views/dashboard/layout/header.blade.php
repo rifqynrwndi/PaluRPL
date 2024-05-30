@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="m-l-15">
                                         <p class="m-b-0 text-dark">Selamat datang</p>
-                                        <p class="m-b-0"><small>2022</small></p>
+                                        <p class="m-b-0"><small>2024</small></p>
                                     </div>
                                 </div>
                             </a>

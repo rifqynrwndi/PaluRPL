@@ -2,7 +2,11 @@
 <form action="{{ route('borda.upload') }}" method="post">
     <div class="card">
         <div class="card-body">
+<<<<<<< HEAD
             <h4>Data Layanan</h4>
+=======
+            <h4>Data Jasa</h4>
+>>>>>>> 91663478031ebfde87073f26f35df128587670cf
             <div class="m-t-25">
                 <table id="data-table1" class="table">
                     <thead>

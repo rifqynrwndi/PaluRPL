@@ -15,7 +15,15 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-appstore"></i>
                     </span>
+<<<<<<< HEAD
                     <span class="title">Informasi Layanan</span>
+=======
+<<<<<<< HEAD
+                    <span class="title">Informasi Jasa</span>
+=======
+                    <span class="title">Informasi Palu</span>
+>>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
+>>>>>>> 91663478031ebfde87073f26f35df128587670cf
                 </a>
             </li>
             {{-- <li class="nav-item dropdown">
@@ -31,7 +39,11 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-file"></i>
                     </span>
+<<<<<<< HEAD
+                    <span class="title">Rekomendasi Jasa</span>
+=======
                     <span class="title">Rekomendasi Layanan</span>
+>>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
                 </a>
             </li>
             {{-- @if (Auth::user()->role == 'admin') --}}
@@ -66,7 +78,7 @@
                         <span class="icon-holder">
                             <i class="anticon anticon-appstore"></i>
                         </span>
-                        <span class="title">Data Kriteria</span>
+                        <span class="title">Detail Jasa</span>
                     </a>
                 </li>
                 <li class="nav-item dropdown">

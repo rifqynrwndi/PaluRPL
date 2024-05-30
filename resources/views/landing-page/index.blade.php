@@ -66,13 +66,8 @@
                                 <li class="nav-item">
                                     <a href="{{ route('landing-page') }}" class="nav-link active">Home</a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a href="{{ route('landing-page.about') }}" class="nav-link">Tentang</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="{{ route('landing-page.contact') }}" class="nav-link">Kontak</a>
+                                    <a href="{{ route('landing-page.contact') }}" class="nav-link">Contact</a>
                                 </li>
                             </ul>
 
@@ -210,8 +205,6 @@
             </div>
         </div>
         <!-- End Featured Area -->
-
-
         <!-- Start Facilities Area -->
         <div class="facilities-area pt-100 pb-70">
             <div class="container">
@@ -284,178 +277,54 @@
         </div>
         <!-- End Facilities Area -->
 
-        <!-- Start Customers Area -->
-        {{-- <div class="customers-area ptb-100">
+        <!-- Start About Area -->
+        <div class="about-area ptb-100">
             <div class="container">
-                <div class="section-title">
-                    <h3>Review dari Mahasiswa</h3>
-                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-sm-6 col-md-6 col-6">
+                                    <div class="image">
+                                        <img src="{{ asset('default') }}/assets/images/about/about-1.jpg" alt="image">
+                                    </div>
+                                </div>
 
-                <div class="customers-slides owl-carousel owl-theme">
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-1.jpg" alt="image">
+                                <div class="col-lg-6 col-sm-6 col-md-6 col-6">
+                                    <div class="image">
+                                        <img src="{{ asset('default') }}/assets/images/about/about-2.jpg" alt="image">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-6 col-md-6 col-6">
+                                    <div class="image">
+                                        <img src="{{ asset('default') }}/assets/images/about/about-3.jpg" alt="image">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-6 col-md-6 col-6">
+                                    <div class="image">
+                                        <img src="{{ asset('default') }}/assets/images/about/about-4.jpg" alt="image">
+                                    </div>
+                                </div>
                             </div>
-
-                            <h4>Thomas Josaf</h4>
-                            <span>CEO of Gacsor</span>
                         </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
                     </div>
 
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-2.jpg" alt="image">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-content">
+                            <h3>Motif Kami adalah Memberikan yang Terbaik untuk Semua dan Memenuhi Kebutuhan Pelanggan</h3>
+                            {{-- <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p> --}}
+
+                            <div class="about-quote">
+                                <span>Founder & CEO - <b>{{ config('app.name') }}</b></span>
                             </div>
-
-                            <h4>John Smith</h4>
-                            <span>Restaurant Owner</span>
                         </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
-                    </div>
-
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-3.jpg" alt="image">
-                            </div>
-
-                            <h4>Andy James</h4>
-                            <span>Hotel Owner</span>
-                        </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
-                    </div>
-
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-4.jpg" alt="image">
-                            </div>
-
-                            <h4>Alex Hales</h4>
-                            <span>Developer</span>
-                        </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
-                    </div>
-
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-1.jpg" alt="image">
-                            </div>
-
-                            <h4>Thomas Josaf</h4>
-                            <span>CEO of Gacsor</span>
-                        </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
-                    </div>
-
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-2.jpg" alt="image">
-                            </div>
-
-                            <h4>John Smith</h4>
-                            <span>Restaurant Owner</span>
-                        </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
-                    </div>
-
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-3.jpg" alt="image">
-                            </div>
-
-                            <h4>Andy James</h4>
-                            <span>Hotel Owner</span>
-                        </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
-                    </div>
-
-                    <div class="customers-item">
-                        <div class="customers-info">
-                            <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/customers/image-4.jpg" alt="image">
-                            </div>
-
-                            <h4>Alex Hales</h4>
-                            <span>Developer</span>
-                        </div>
-                        <p>Proin gravida nibh vel velit attor aliquet. Aenean sollicitudin lorem quis bibendum auctor.</p>
-
-                        <ul class="rating-list">
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li><i class='bx bxs-star'></i></li>
-                            <li class="color-gray"><i class='bx bxs-star'></i></li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div> --}}
-        <!-- End Customers Area -->
-
+        </div>
+        <!-- End About Area -->
         <!-- Start Footer Area -->
         <footer class="footer-area pt-100">
             <div class="container">
@@ -463,12 +332,12 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single-footer-widget">
                             <div class="widget-logo">
-                                <a href="javascript:void(0);">
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
+                              <a href="javascript:void(0);">
+                                <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
                                 </a>
                             </div>
 
-                            <p>Aplikasi layanan jasa harian terbaik</p>
+                            <p>Aplikasi Solusi Rumah Tangga Serba Guna </p>
 
                             <ul class="widget-social">
                                 <li>
@@ -494,19 +363,16 @@
                             <ul class="widget-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-                                    FMIPA, Universitas Negeri Semarang
+                                    Kelompok SKIBIDI
                                 </li>
-
                                 <li>
                                     <i class='bx bxs-phone'></i>
-                                    <a href="/">+62 813-4062-6489</a>
+                                    <a href="/">+62 822-1016-2910 </a>
                                 </li>
-
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">palu@email.com</span></a>
+                                    <a href="mailto:palu@gmail.com"><span>palu@gmail.com</span></a>
                                 </li>
-
                                 <li>
                                     <i class='bx bx-time'></i>
                                     8.00 AM - 5.00 PM (Mon-Sat)
@@ -521,8 +387,7 @@
                 <div class="container">
                     <div class="copyright-area-content">
                         <p>
-                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Teman Jasa Anda. All Rights Reserved by
-                            <a href="https://adhyy.my.id/" target="_blank">Palu</a>
+                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by Skibidi.Inc
                         </p>
                     </div>
                 </div>
