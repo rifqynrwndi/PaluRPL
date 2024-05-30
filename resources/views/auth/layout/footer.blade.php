@@ -1,5 +1,5 @@
 <div class="d-none d-md-flex p-h-40 justify-content-between">
-    <span class="">© 2022 Penentuan Kost Terbaik</span>
+    <span class="">© 2024 SKIBIDI INC</span>
 </div>
 </div>
 </div>

@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between m-b-30">
                         <img class="img-fluid" alt=""
-                            src="{{ asset('admin/demo/app') }}/assets/images/logo/logo-dark.png" width="200">
+                            src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" width="100">
                         <h2 class="m-b-0">Sign In</h2>
                     </div>
                     <form action="{{ route('login.post') }}" method="POST">
