@@ -1,7 +1,7 @@
                 <!-- Footer START -->
                 <footer class="footer">
                     <div class="footer-content">
-                        <p class="m-b-0">Copyright © 2022 Teman Jasa Anda. All rights reserved. Palu</p>
+                        <p class="m-b-0">Copyright © 2024 Teman Jasa Anda. All rights reserved. Palu</p>
                     </div>
                 </footer>
                 <!-- Footer END -->

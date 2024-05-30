@@ -3,13 +3,13 @@
     <div class="logo logo-dark">
         <a href="index">
             <img src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" width= "100"  alt="Logo">
-            <img class="logo-fold" src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" alt="Logo">
+            <img class="logo-fold" src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" width="65" alt="Logo" >
         </a>
     </div>
     <div class="logo logo-white">
         <a href="index">
             <img src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" alt="Logo">
-            <img class="logo-fold" src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" alt="Logo">
+            <img class="logo-fold" src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" alt="Logo" width="100">
         </a>
     </div>
     <div class="nav-wrap">
