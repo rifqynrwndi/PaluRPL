@@ -13,8 +13,7 @@
                         </div>
                         <div class="m-l-15">
                             <h2 class="m-b-0">Informasi</h2>
-                            <p class="m-b-0 text-muted">Selamat datang dihalaman dashboard | Sistem Pendukung Keputusan
-                                Penentuan Kost Terbaik</p>
+                            <p class="m-b-0 text-muted">Selamat datang dihalaman dashboard | Sistem Layanan jasa terbaik</p>
                         </div>
                     </div>
                 </div>
@@ -28,7 +27,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h2 class="m-b-0">90</h2>
-                            <p class="m-b-0 text-muted">Jumlah kost saat ini</p>
+                            <p class="m-b-0 text-muted">Jumlah Layanan saat ini</p>
                         </div>
                         <div>
                             <span class="badge badge-pill badge-cyan font-size-12">
@@ -46,7 +45,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5>Top Kost</h5>
+                        <h5>Top Layanan</h5>
                         <div>
                             <a href="javascript:void(0);" class="btn btn-sm btn-default">View All</a>
                         </div>
@@ -56,7 +55,7 @@
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Nama Kost</th>
+                                        <th>Nama Layanan</th>
                                         <th>Alamat</th>
                                         <th>No. Handphone</th>
                                         <th style="max-width: 70px">Stok Kamar</th>

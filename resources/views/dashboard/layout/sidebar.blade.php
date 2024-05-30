@@ -16,10 +16,14 @@
                         <i class="anticon anticon-appstore"></i>
                     </span>
 <<<<<<< HEAD
+                    <span class="title">Informasi Layanan</span>
+=======
+<<<<<<< HEAD
                     <span class="title">Informasi Jasa</span>
 =======
                     <span class="title">Informasi Palu</span>
 >>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
+>>>>>>> 91663478031ebfde87073f26f35df128587670cf
                 </a>
             </li>
             {{-- <li class="nav-item dropdown">

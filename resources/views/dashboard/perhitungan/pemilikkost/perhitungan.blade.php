@@ -1,15 +1,16 @@
 {{-- Data Kost --}}
 <div class="card">
     <div class="card-body">
-        <h4>Data Kost</h4>
+        <h4>Data Tugas</h4>
         <div class="m-t-25">
             <table id="data-table1" class="table">
                 <thead>
                     <tr>
-                        <th>Nama Kost</th>
-                        <th>Luas Kamar</th>
-                        <th>Jarak Dari Kampus</th>
-                        <th>Desain Rumah</th>
+                        <th>Nama Tugas</th>
+                        <th>Nama Pekerja</th>
+                        <th>Harga</th>
+                        <th>Lokasi</th>
+                        <th>Review</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,10 +25,11 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Nama Kost</th>
-                        <th>Luas Kamar</th>
-                        <th>Jarak Dari Kampus</th>
-                        <th>Desain Rumah</th>
+                    <th>Nama Tugas</th>
+                        <th>Nama Pekerja</th>
+                        <th>Harga</th>
+                        <th>Lokasi</th>
+                        <th>Review</th>
                     </tr>
                 </tfoot>
             </table>
@@ -38,16 +40,16 @@
 {{-- Data Kost 2 --}}
 <div class="card">
     <div class="card-body">
-        <h4>Data Kost</h4>
-        <p>Konversi Ke keterangan</p>
+        <h4>Data Pekerja</h4>
         <div class="m-t-25">
             <table id="data-table2" class="table">
                 <thead>
                     <tr>
-                        <th>Nama Kost</th>
-                        <th>Luas Kamar</th>
-                        <th>Jarak Dari Kampus</th>
-                        <th>Desain Rumah</th>
+                        <th>Nama Pekerja</th>
+                        <th>Nama Tugas</th>
+                        <th>Alamat</th>
+                        <th>No. Telpon</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -62,10 +64,11 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Nama Kost</th>
-                        <th>Luas Kamar</th>
-                        <th>Jarak Dari Kampus</th>
-                        <th>Desain Rumah</th>
+                        <th>Nama Pekerja</th>
+                        <th>Nama Tugas</th>
+                        <th>Alamat</th>
+                        <th>No. Telpon</th>
+                        <th>Email</th>
                     </tr>
                 </tfoot>
             </table>
@@ -81,7 +84,7 @@
             <table id="data-table3" class="table">
                 <thead>
                     <tr>
-                        <th>Nama Kost</th>
+                        <th>Nama Layanan</th>
                         <th>Luas Kamar</th>
                         <th>Jarak Dari Kampus</th>
                         <th>Desain Rumah</th>
@@ -103,7 +106,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Nama Kost</th>
+                        <th>Nama Layanan</th>
                         <th>Luas Kamar</th>
                         <th>Jarak Dari Kampus</th>
                         <th>Desain Rumah</th>
