@@ -442,11 +442,11 @@
                         <div class="single-footer-widget">
                             <div class="widget-logo">
                                 <a href="javascript:void(0);">
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px">
+                                    {{-- <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px"> --}}
                                 </a>
                             </div>
 
-                            <p>Aplikasi penentuan kost terbaik menggunakan metode AHP dan Borda</p>
+                            <p>Aplikasi Solusi Rumah Tangga Serba Guna </p>
 
                             <ul class="widget-social">
                                 <li>
@@ -472,17 +472,17 @@
                             <ul class="widget-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-                                    Fakultas Ilmu Komputer, Universitas Muslim Indonesia
+                                    FMIPA, Universitas Negeri Semarang
                                 </li>
 
                                 <li>
                                     <i class='bx bxs-phone'></i>
-                                    <a href="/">+62 823-9943-1723</a>
+                                    <a href="/">+62 822-1016-2910</a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-envelope'></i>
-                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">[email&#160;protected]</span></a>
+                                    <a href="mailto:palu@gmail.com"><span>palu@gmail.com</span></a>
                                 </li>
 
                                 <li>
