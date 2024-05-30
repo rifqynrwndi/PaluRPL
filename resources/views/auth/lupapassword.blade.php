@@ -6,8 +6,8 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between m-b-30">
                         <img class="img-fluid" alt=""
-                            src="{{ asset('admin/demo/app') }}/assets/images/logo/logo-dark.png" width="200">
-                        <h2 class="m-b-0">Forgot</h2>
+                            src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" width="100">
+                        <h2 class="m-b-0">Forgot Password</h2>
                     </div>
                     <form action="#" method="POST">
                         @csrf

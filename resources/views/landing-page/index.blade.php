@@ -464,19 +464,11 @@
                         <div class="single-footer-widget">
                             <div class="widget-logo">
                                 <a href="javascript:void(0);">
-<<<<<<< HEAD
                                     {{-- <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px"> --}}
                                 </a>
                             </div>
 
                             <p>Aplikasi Solusi Rumah Tangga Serba Guna </p>
-=======
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
-                                </a>
-                            </div>
-
-                            <p>Aplikasi layanan jasa harian terbaik</p>
->>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
 
                             <ul class="widget-social">
                                 <li>
@@ -502,29 +494,17 @@
                             <ul class="widget-info">
                                 <li>
                                     <i class='bx bxs-map'></i>
-<<<<<<< HEAD
                                     Kelompok SKIBIDI
-=======
-                                    FMIPA, Universitas Negeri Semarang
->>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
                                 </li>
 
                                 <li>
                                     <i class='bx bxs-phone'></i>
-<<<<<<< HEAD
-                                    <a href="/">+62 822-1016-2910a>
-=======
-                                    <a href="/">+62 813-4062-6489</a>
->>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
+                                    <a href="/">+62 822-1016-2910a>
                                 </li>
 
                                 <li>
                                     <i class='bx bx-envelope'></i>
-<<<<<<< HEAD
                                     <a href="mailto:palu@gmail.com"><span>palu@gmail.com</span></a>
-=======
-                                    <a href="/"><span class="__cf_email__" data-cfemail="bfd7dad3d3d0ffd9d6dbd091dcd0d2">palu@email.com</span></a>
->>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
                                 </li>
 
 
@@ -542,12 +522,7 @@
                 <div class="container">
                     <div class="copyright-area-content">
                         <p>
-<<<<<<< HEAD
                             Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by Skibidi.Inc
-=======
-                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Teman Jasa Anda. All Rights Reserved by
-                            <a href="https://adhyy.my.id/" target="_blank">Palu</a>
->>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
                         </p>
                     </div>
                 </div>
