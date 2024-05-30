@@ -464,7 +464,7 @@
                         <div class="single-footer-widget">
                             <div class="widget-logo">
                                 <a href="javascript:void(0);">
-                                    {{-- <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px"> --}}
+                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
                                 </a>
                             </div>
 
