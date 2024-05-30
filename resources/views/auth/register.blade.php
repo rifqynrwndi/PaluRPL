@@ -36,8 +36,8 @@
                         <div class="form-group">
                             <label for="inputState">Sebagai</label>
                             <select id="inputState" name="role" class="form-control">
-                                <option value="user">User</option>
-                                <option value="pekerja">Pekerja</option>
+                                <option value="mahasiswa">User</option>
+                                <option value="pemilikkos">Pekerja</option>
                             </select>
                         </div>
                         <div class="form-group">
