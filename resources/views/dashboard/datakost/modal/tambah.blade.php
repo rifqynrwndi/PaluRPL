@@ -8,20 +8,20 @@
         <div class="header-sub-title">
             <nav class="breadcrumb breadcrumb-dash">
                 <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Dashboard</a>
-                <a class="breadcrumb-item" href="#">Tambah Kost</a>
+                <a class="breadcrumb-item" href="#">Tambah Layanan</a>
             </nav>
         </div>
     </div>
     <div class="card">
         <div class="card-body">
-            <h4>Tambah Kost</h4>
+            <h4>Tambah Layanan</h4>
             <hr>
             <form action="{{ route('datakost.push') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="m-t-25">
                     <div class="row">
                         <div class="col-md-12">
-                            <label for="">Nama Kost</label>
+                            <label for="">Nama Layanan</label>
                             <input type="text" class="form-control m-b-15" name="nama_kost" placeholder="Nama Kost" required>
                         </div>
                         <div class="col-md-12">

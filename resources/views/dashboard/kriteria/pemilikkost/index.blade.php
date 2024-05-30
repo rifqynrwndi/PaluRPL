@@ -8,7 +8,7 @@
         <div class="header-sub-title">
             <nav class="breadcrumb breadcrumb-dash">
                 <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Dashboard</a>
-                <a class="breadcrumb-item" href="#">Data Kriteria Pemilik Kost</a>
+                <a class="breadcrumb-item" href="#">Data Kriteria Pemilik Layanan</a>
             </nav>
         </div>
     </div>

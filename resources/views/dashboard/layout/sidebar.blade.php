@@ -15,7 +15,7 @@
                     <span class="icon-holder">
                         <i class="anticon anticon-appstore"></i>
                     </span>
-                    <span class="title">Informasi Palu</span>
+                    <span class="title">Informasi Layanan</span>
                 </a>
             </li>
             {{-- <li class="nav-item dropdown">
