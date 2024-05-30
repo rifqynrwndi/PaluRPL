@@ -518,12 +518,7 @@
                 <div class="container">
                     <div class="copyright-area-content">
                         <p>
-<<<<<<< HEAD
                             Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> {{ config('app.name') }}. All Rights Reserved by Skibidi.Inc
-=======
-                            Copyright @<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Teman Jasa Anda. All Rights Reserved by
-                            <a href="https://adhyy.my.id/" target="_blank">Palu</a>
->>>>>>> 13c7d1afc06a51e2b9c9230259791613c23fb0e8
                         </p>
                     </div>
                 </div>
