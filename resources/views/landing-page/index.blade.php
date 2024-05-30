@@ -332,8 +332,13 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single-footer-widget">
                             <div class="widget-logo">
+<<<<<<< HEAD
+                                <a href="javascript:void(0);">
+                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
+=======
                               <a href="javascript:void(0);">
                                 <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
+>>>>>>> 508fa0d8333f50f7545b6335b04ca81f1eedd57e
                                 </a>
                             </div>
 
