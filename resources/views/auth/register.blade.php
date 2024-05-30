@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between m-b-30">
                         <img class="img-fluid" alt=""
-                            src="{{ asset('admin/demo/app') }}/assets/images/logo/logo-dark.png" width="200">
+                            src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" width="100">
                         <h2 class="m-b-0">Sign Up</h2>
                     </div>
                     @include('auth.validation.register_error')
@@ -36,8 +36,8 @@
                         <div class="form-group">
                             <label for="inputState">Sebagai</label>
                             <select id="inputState" name="role" class="form-control">
-                                <option value="mahasiswa">Mahasiswa</option>
-                                <option value="pemilikkost">Pemilik Kost</option>
+                                <option value="user">User</option>
+                                <option value="pekerja">Pekerja</option>
                             </select>
                         </div>
                         <div class="form-group">
