@@ -463,7 +463,11 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single-footer-widget">
                             <div class="widget-logo">
+<<<<<<< HEAD
                                 {{-- <a href="javascript:void(0);">
+=======
+                                <a href="javascript:void(0);">
+>>>>>>> 95374e4d9ae07a74aaf2991800e309c299d633e1
                                     {{-- <img src="{{ asset('admin/demo/app/assets/images/logo/logo-white.png') }}" alt="image" width="200px"> --}}
                                 </a>
                             </div>
@@ -498,7 +502,11 @@
                                 </li>
                                 <li>
                                     <i class='bx bxs-phone'></i>
+<<<<<<< HEAD
                                     <a href="/">+62 822-1016-2910a>
+=======
+                                    <a href="/">+62 822-1016-2910a>
+>>>>>>> 95374e4d9ae07a74aaf2991800e309c299d633e1
                                 </li>
                                 <li>
                                     <i class='bx bx-envelope'></i>
