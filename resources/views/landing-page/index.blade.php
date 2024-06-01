@@ -216,7 +216,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="single-facilities">
                             <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/facilities/facilities-1.png" alt="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/electric.png" alt="image">
                             </div>
 
                             <h3>Jasa Tukang Listrik</h3>
