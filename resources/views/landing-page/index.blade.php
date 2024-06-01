@@ -219,59 +219,81 @@
                                 <img src="{{ asset('default') }}/assets/images/facilities/electric.png" alt="image">
                             </div>
 
-                            <h3>Jasa Tukang Listrik</h3>
+                            <h3>Elektrik</h3>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-facilities">
                             <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/facilities/facilities-2.png" alt="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/cottage.png" alt="image">
                             </div>
 
-                            <h3>Jasa Pemasangan Barang</h3>
+                            <h3>Perbaikan Rumah</h3>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-facilities">
                             <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/facilities/facilities-3.png" alt="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/chair.png" alt="image">
                             </div>
 
-                            <h3>Pemindahan Barang</h3>
+                            <h3>Furnitur</h3>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-facilities">
                             <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/facilities/facilities-4.png" alt="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/hammer.png" alt="image">
                             </div>
 
-                            <h3>Jasa Bersih Ruangan</h3>
+                            <h3>Dekorasi</h3>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-facilities">
                             <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/facilities/facilities-5.png" alt="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/nature.png" alt="image">
                             </div>
 
-                            <h3>Jasa Bantu Luar Ruangan</h3>
+                            <h3>Jasa Pohon</h3>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-facilities">
                             <div class="image">
-                                <img src="{{ asset('default') }}/assets/images/facilities/facilities-6.png" alt="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/valve.png" alt="image">
                             </div>
 
-                            <h3>Jasa Cat Ruangan</h3>
+                            <h3>Juru Pipa Air</h3>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-facilities">
+                            <div class="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/captive_portal.png" alt="image">
+                            </div>
+
+                            <h3>Setup Jaringan Rumah</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-facilities">
+                            <div class="image">
+                                <img src="{{ asset('default') }}/assets/images/facilities/lock.png" alt="image">
+                            </div>
+
+                            <h3>Tukang Kunci</h3>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -313,11 +335,11 @@
 
                     <div class="col-lg-6 col-md-12">
                         <div class="about-content">
-                            <h3>Motif Kami adalah Memberikan yang Terbaik untuk Semua dan Memenuhi Kebutuhan Pelanggan</h3>
+                            <h3>Bisnis Kami Dibangun Atas Landasan yang Sama, yaitu Memberikan yang Terbaik untuk Semua dan Memenuhi Kebutuhan Pelanggan</h3>
                             {{-- <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p> --}}
 
                             <div class="about-quote">
-                                <span>Founder & CEO - <b>{{ config('app.name') }}</b></span>
+                                <span>Founder & CEO of <b>{{ config('app.name') }}</b> - <mark><i>Rifqy Nirwandi</i></mark></span>
                             </div>
                         </div>
                     </div>
@@ -332,13 +354,10 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single-footer-widget">
                             <div class="widget-logo">
-<<<<<<< HEAD
-                                <a href="javascript:void(0);">
-                                    <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
-=======
+
                               <a href="javascript:void(0);">
                                 <img src="{{ asset('admin/demo/app/assets/images/logo/logo.png') }}" alt="image" width="200px">
->>>>>>> 508fa0d8333f50f7545b6335b04ca81f1eedd57e
+
                                 </a>
                             </div>
 
