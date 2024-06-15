@@ -78,7 +78,6 @@
                     </a>
                 </li>
             @endif
-            <hr>
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="{{ route('profile.index') }}">
                     <span class="icon-holder">

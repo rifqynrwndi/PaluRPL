@@ -17,10 +17,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserSeeder::class,
-            KriteriaMahasiswaSeeder::class,
-            KriteriaPemilikKostSeeder::class,
-            SubKriteriaMahasiswaSeeder::class,
-            SubKriteriaPemilikKostSeeder::class,
         ]);
         // \App\Models\Kost::factory(10)->create();
     }

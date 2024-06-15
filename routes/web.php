@@ -26,25 +26,25 @@ use Illuminate\Support\Facades\Route;
 */
 //Authentication
 Route::get('/', function(){
-    return view('auth.validation.login');
+    return view('auth.login');
 });
 // Route::get('/', [AuthController::class, 'login'])->name('login');
-Route::post('/post', [AuthController::class, 'login_post'])->name('login.post');
-Route::get('/register', [AuthController::class, 'register'])->name('register');
-Route::post('/register/post', [AuthController::class, 'registerpost'])->name('register.post');
+// Route::post('/', [AuthController::class, 'login_post'])->name('login.post');
+// Route::get('/register', [AuthController::class, 'register'])->name('register');
+// Route::post('/register/post', [AuthController::class, 'registerpost'])->name('register.post');
 
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+// Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('/forgot-password', [AuthController::class, 'forgotpassword'])->name('forgotpassword');
+// Route::get('/forgot-password', [AuthController::class, 'forgotpassword'])->name('forgotpassword');
 
 
-Route::group(['middleware' => ['auth']], function(){
+// Route::group(['middleware' => ['auth']], function(){
 
-    //Dashboard
-    Route::get('/dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index');
+//     //Dashboard
+//     Route::get('/dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index');
 
-    //Profil
-    Route::get('/dashboard/profile', [ProfileController::class, 'index'])->name('profile.index');
-    Route::post('/dashboard/profile/changepassword', [ProfileController::class, 'changepassword'])->name('profile.changepassword');
-    Route::post('/dashboard/profile/changeavatar', [ProfileController::class, 'changeavatar'])->name('profile.changeavatar');
-});
+//     //Profil
+//     Route::get('/dashboard/profile', [ProfileController::class, 'index'])->name('profile.index');
+//     Route::post('/dashboard/profile/changepassword', [ProfileController::class, 'changepassword'])->name('profile.changepassword');
+//     Route::post('/dashboard/profile/changeavatar', [ProfileController::class, 'changeavatar'])->name('profile.changeavatar');
+// });

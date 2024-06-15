@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard | Penentuan {{ env('APP_NAME') }}</title>
+    <title>Dashboard | {{ env('APP_NAME') }}</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('admin/demo/app') }}/assets/images/logo/favicon.png">
