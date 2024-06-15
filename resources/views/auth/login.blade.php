@@ -42,10 +42,6 @@
                             </div>
                         </div>
                     </form>
-                    <a href="{{ route('landing-page') }}" id="trigger-loading-1" class="btn btn-default m-r-5">
-                        <i class="anticon anticon-loading m-r-5"></i>
-                        <span>Kembali ke Home</span>
-                    </a>
                 </div>
             </div>
         </div>
