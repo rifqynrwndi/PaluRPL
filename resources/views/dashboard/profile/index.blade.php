@@ -1,3 +1,7 @@
+@extends('dashboard.layout.app')
+@include('dashboard.layout.head')
+@include('dashboard.layout.header')
+@include('dashboard.layout.sidebar')
 <!-- Content Wrapper START -->
 <div class="main-content">
     <div class="page-header">

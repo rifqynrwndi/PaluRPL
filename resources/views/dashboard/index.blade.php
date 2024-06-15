@@ -1,5 +1,7 @@
 @extends('dashboard.layout.app')
 @include('dashboard.layout.head')
+@include('dashboard.layout.header')
+@include('dashboard.layout.sidebar')
 <!-- Content Wrapper START -->
 
 @push('style')
@@ -801,6 +803,8 @@
             </div>
         </section>
     </div>
+
+    @include('dashboard.layout.footer')
 
 <!-- Content Wrapper END -->
 @push('scripts')

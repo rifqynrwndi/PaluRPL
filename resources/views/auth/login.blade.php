@@ -9,7 +9,7 @@
                             src="{{ asset('admin/demo/app') }}/assets/images/logo/logo.png" width="100">
                         <h2 class="m-b-0">Sign In</h2>
                     </div>
-                    <form>
+                    <form action="{{ route('login.post') }}" method="POST">
                         @csrf
                         <div class="form-group">
                             <label class="font-weight-semibold" for="userName">Email:</label>

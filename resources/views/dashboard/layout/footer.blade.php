@@ -11,7 +11,6 @@
         </div>
     </div>
 
-
     <!-- Core Vendors JS -->
     <script src="{{ asset('admin/demo/app') }}/assets/js/vendors.min.js"></script>
 

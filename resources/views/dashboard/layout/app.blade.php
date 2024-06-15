@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
         name="viewport">
-    <title>@yield('title') &mdash; Stisla</title>
+    <title>Dashboard | {{ env('APP_NAME') }}</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet"
@@ -45,14 +45,11 @@
     <div id="app">
         <div class="main-wrapper">
             <!-- Header -->
-            @include('dashboard.layout.header')
-
+            @include('dashboard.layout.head')
             <!-- Sidebar -->
             @include('dashboard.layout.sidebar')
-
             <!-- Content -->
             @yield('main')
-
             <!-- Footer -->
             @include('dashboard.layout.footer')
         </div>
