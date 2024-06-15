@@ -2,9 +2,16 @@
 
 use App\Http\Controllers\AlternatifController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BordaController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DataKostController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KriteriaMahasiswaController;
+use App\Http\Controllers\KriteriaPemilikKostController;
+use App\Http\Controllers\PerhitunganMahasiswaController;
+use App\Http\Controllers\PerhitunganPemilikKostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RekomendasiKostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +25,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //Authentication
-Route::get('/', [AuthController::class, 'login'])->name('login');
+Route::get('/', function(){
+    return view('auth.validation.login');
+});
+// Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::post('/post', [AuthController::class, 'login_post'])->name('login.post');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register/post', [AuthController::class, 'registerpost'])->name('register.post');

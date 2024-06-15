@@ -1,7 +1,5 @@
 @extends('dashboard.layout.app')
 @include('dashboard.layout.head')
-@include('dashboard.layout.header')
-@include('dashboard.layout.sidebar')
 <!-- Content Wrapper START -->
 
 @push('style')
@@ -805,7 +803,6 @@
     </div>
 
 <!-- Content Wrapper END -->
-@include('dashboard.layout.footer')
 @push('scripts')
     <!-- JS Libraies -->
     <script src="{{ asset('library/simpleweather/jquery.simpleWeather.min.js') }}"></script>

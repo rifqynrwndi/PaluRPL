@@ -8,30 +8,6 @@
 
             </div>
             <!-- Page Container END -->
-
-
-            <!-- Quick View START -->
-            <div class="modal modal-right fade quick-view" id="quick-view">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header justify-content-between align-items-center">
-                            <h5 class="modal-title">Theme Config</h5>
-                        </div>
-                        <div class="modal-body scrollable">
-                            <div>
-                                <h5 class="m-b-0">Side Nav Dark</h5>
-                                <p>Change Side Nav to dark</p>
-                                <div class="switch d-inline">
-                                    <input type="checkbox" name="side-nav-theme-toogle" id="side-nav-theme-toogle">
-                                    <label for="side-nav-theme-toogle"></label>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Quick View END -->
         </div>
     </div>
 
