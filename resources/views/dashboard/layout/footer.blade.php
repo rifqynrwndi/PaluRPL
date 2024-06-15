@@ -27,14 +27,6 @@
                                 </div>
                             </div>
                             <hr>
-                            <div>
-                                <h5 class="m-b-0">Folded Menu</h5>
-                                <p>Toggle Folded Menu</p>
-                                <div class="switch d-inline">
-                                    <input type="checkbox" name="side-nav-fold-toogle" id="side-nav-fold-toogle">
-                                    <label for="side-nav-fold-toogle"></label>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

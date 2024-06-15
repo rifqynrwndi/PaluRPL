@@ -14,7 +14,7 @@
     </div>
     <div class="nav-wrap">
         <ul class="nav-left">
-            <li class="desktop-toggle">
+            {{-- <li class="desktop-toggle">
                 <a href="javascript:void(0);">
                     <i class="anticon"></i>
                 </a>
@@ -24,7 +24,7 @@
                     <i class="anticon"></i>
                 </a>
             </li>
-            {{-- <li>
+            <li>
                 <a href="javascript:void(0);" data-toggle="modal" data-target="#search-drawer">
                     <i class="anticon anticon-search"></i>
                 </a>
