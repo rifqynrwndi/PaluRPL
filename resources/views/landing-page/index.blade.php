@@ -64,7 +64,7 @@
 
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <a href="{{ route('landing-page') }}" class="nav-link active">Home</a>
+                                    <a href="    class="nav-link active">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{ route('landing-page.contact') }}" class="nav-link">Contact</a>
@@ -114,93 +114,12 @@
         <!-- End Navbar Area -->
 
         <!-- Start Main Slides With Featured Area -->
-        <div class="main-slides-with-featured-area">
-            <div class="home-slides-two owl-carousel owl-theme">
-                @foreach ($data['kost'] as $item)
-                <div class="slides-item-box item-{{ $item->id }}">
-                    <div class="container">
-                        <div class="slides-content-box">
-                            <div class="top-content">
-                                <ul class="tag-list">
-                                    <li class="featured"><a href="javascript:void(0);">Featured</a></li>
-                                </ul>
-
-                                {{-- <div class="price">@currency($item->harga_sewa)</div> --}}
-                                <span>{{ $item->keamanan }}</span>
-                                <h3>
-                                    <a href="javascript:void(0);">{{ $item->nama_kost }}</a>
-                                </h3>
-                                <p>{{ $item->desain_rumah }}</p>
-                                <p>{{ $item->tipe_kost }}</p>
-
-                                <ul class="featured-list">
-                                    <li><i class='bx bx-bed'></i>{{ implode(' . ', json_decode($item->fasilitas)) }}</li>
-                                </ul>
-                            </div>
-
-                            <div class="bottom-content">
-                                <ul class="rating-list">
-                                    <li><i class='bx bxs-star'></i></li>
-                                    <li><i class='bx bxs-star'></i></li>
-                                    <li><i class='bx bxs-star'></i></li>
-                                    <li><i class='bx bxs-star'></i></li>
-                                    <li class="color-gray"><i class='bx bxs-star'></i></li>
-                                    <li>{{ $item->panjangkamar }} x {{ $item->lebarkamar }}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-        <!-- End Main Slides With Featured Area -->
-
         <!-- Start Featured Area -->
         <div class="featured-area ptb-100">
             <div class="container">
                 <div class="section-title">
                     <h3>Palu. Teman Jasa Anda.</h3>
                     <p>Bantuan apa yang ingin anda cari hari ini?</p>
-                </div>
-
-                <div class="featured-slides owl-carousel owl-theme">
-                    @foreach ($data['kost'] as $k)
-                    <div class="featured-item-box">
-                        <div class="featured-image">
-                            <a href="javascript:void(0);"><img src="{{ asset('admin/demo/app/images') }}/{{ $k->gambar }}" alt="image"></a>
-
-                           <div class="tag"><a href="javascript:void(0);">{{ $k->tipe_kost }}</a></div>
-
-                            <div class="featured-top-content">
-                                <span>{{ $k->keamanan }}</span>
-                                <h3>
-                                    <a href="javascript:void(0);">{{ $k->nama_kost }}</a>
-                                </h3>
-                                <p>@currency($k->harga_sewa) /bulan</p>
-
-                                <ul class="featured-list">
-                                    <li><i class='bx bx-bed'></i>{{ implode(' . ', json_decode($k->fasilitas)) }}</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="featured-bottom-content">
-                            <ul class="rating-list">
-                                <li><i class='bx bxs-star'></i></li>
-                                <li><i class='bx bxs-star'></i></li>
-                                <li><i class='bx bxs-star'></i></li>
-                                <li><i class='bx bxs-star'></i></li>
-                                <li class="color-gray"><i class='bx bxs-star'></i></li>
-                                <li>{{ $k->panjangkamar }} x {{ $k->lebarkamar }}m<sup>2</sup></li>
-                            </ul>
-
-                            <div class="featured-btn">
-                                <a href="javascript:void(0);" class="default-btn">{{ $k->rank }}<span></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
                 </div>
             </div>
         </div>

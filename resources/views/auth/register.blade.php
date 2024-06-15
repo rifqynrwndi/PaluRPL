@@ -34,13 +34,6 @@
                                 placeholder="Confirm Password">
                         </div>
                         <div class="form-group">
-                            <label for="inputState">Sebagai</label>
-                            <select id="inputState" name="role" class="form-control">
-                                <option value="mahasiswa">User</option>
-                                <option value="pemilikkos">Pekerja</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
                             <div class="d-flex align-items-center justify-content-between p-t-15">
                                 <div class="checkbox">
                                     <input id="checkbox" name="checkbox" type="checkbox" required>

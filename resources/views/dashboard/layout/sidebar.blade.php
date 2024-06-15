@@ -11,7 +11,7 @@
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="{{ route('datakost.index') }}">
+                <a class="dropdown-toggle" href="">
                     <span class="icon-holder">
                         <i class="anticon anticon-appstore"></i>
                     </span>
@@ -27,7 +27,7 @@
                 </a>
             </li> --}}
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="{{ route('rekomendasikost.index') }}">
+                <a class="dropdown-toggle" href="">
                     <span class="icon-holder">
                         <i class="anticon anticon-file"></i>
                     </span>

@@ -40,38 +40,10 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/forgot-password', [AuthController::class, 'forgotpassword'])->name('forgotpassword');
 
 
-Route::group(['middleware' => ['auth', 'checkRole:admin,mahasiswa,pemilikkost']], function(){
+Route::group(['middleware' => ['auth']], function(){
 
     //Dashboard
     Route::get('/dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index');
-
-    //Data Kost
-    Route::get('/dashboard/data-kost', [DataKostController::class, 'index'])->name('datakost.index');
-    Route::get('/dashboard/data-kost/insert', [DataKostController::class, 'insert'])->name('datakost.insert');
-    Route::post('/dashboard/data-kost/push', [DataKostController::class, 'push'])->name('datakost.push');
-    Route::get('/dashboard/data-kost/edit/{id}', [DataKostController::class, 'edit'])->name('datakost.edit');
-    Route::post('/dashboard/data-kost/update/{id}', [DataKostController::class, 'update'])->name('datakost.update');
-    Route::get('/dashboard/data-kost/delete/{id}', [DataKostController::class, 'delete'])->name('datakost.delete');
-
-    //Rekomendasi Kost
-    Route::get('/dashboard/rekomendasi-kost', [RekomendasiKostController::class, 'index'])->name('rekomendasikost.index');
-    Route::get('/dashboard/rekomendasi-kost/{id}', [RekomendasiKostController::class, 'show'])->name('rekomendasikost.show');
-
-    // Kriteria Mahasiswa
-    Route::get('/dashboard/kriteria-mahasiswa', [KriteriaMahasiswaController::class, 'index'])->name('kriteriamahasiswa.index');
-
-    // Kriteria Pemilik Kost
-    Route::get('/dashboard/kriteria-pemilikkost', [KriteriaPemilikKostController::class, 'index'])->name('kriteriapemilikkost.index');
-
-    //Perhitungan Mahasiswa
-    Route::get('/dashboard/perhitungan-mahasiswa', [PerhitunganMahasiswaController::class, 'index'])->name('perhitunganmahasiswa.index');
-
-    //Perhitungan Pemilik Kost
-    Route::get('/dashboard/perhitungan-pemilikkost', [PerhitunganPemilikKostController::class, 'index'])->name('perhitunganpemilikkost.index');
-
-    //Perhitungan Borda
-    Route::get('/dashboard/borda', [BordaController::class, 'index'])->name('borda.index');
-    Route::post('/dashboard/borda/upload', [BordaController::class, 'upload'])->name('borda.upload');
 
     //Profil
     Route::get('/dashboard/profile', [ProfileController::class, 'index'])->name('profile.index');
