@@ -1,16 +1,14 @@
 @extends('dashboard.layout.app')
 @include('dashboard.layout.head')
 @include('dashboard.layout.header')
-@include('dashboard.layout.sidebar')
 <!-- Content Wrapper START -->
 <div class="main-content">
     <div class="page-header">
         <h2 class="header-title">Profile</h2>
         <div class="header-sub-title">
             <nav class="breadcrumb breadcrumb-dash">
-                <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
-                <a class="breadcrumb-item" href="#">Pages</a>
-                <span class="breadcrumb-item active">Profile</span>
+                <a href="{{ route('dashboard.index') }}" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Home</a>
+                <a class="breadcrumb-item">Profile</a>
             </nav>
         </div>
     </div>
@@ -28,7 +26,7 @@
                             <div class="text-center text-sm-left m-v-15 p-l-30">
                                 <h2 class="m-b-5">{{ Auth::user()->name }}</h2>
                                 <p class="text-opacity font-size-13">{{ Auth::user()->email }}</p>
-                                <p class="text-dark m-b-20">{{ Auth::user()->role }}</p>
+                                <p class="text-dark m-b-20">{{ Auth::user()->roles }}</p>
                                 @include('dashboard.profile.modal.avatar')
                                 <button type="button" class="btn btn-primary btn-tone" data-toggle="modal" data-target="#changeAvatar">
                                     Ganti Avatar

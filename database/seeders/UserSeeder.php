@@ -16,12 +16,13 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(9)->create();
+        \App\Models\User::factory(9)->create();
         // //
         User::insert([
             'name' => 'Administrator',
             'email' => 'admin@gmail.com',
             'nohp' => '082399431723',
+            'roles' => 'admin',
             'password' => Hash::make('admin123'),
             'avatar' => 'user.png',
         ]);

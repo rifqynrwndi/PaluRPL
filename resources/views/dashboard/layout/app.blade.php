@@ -46,12 +46,13 @@
         <div class="main-wrapper">
             <!-- Header -->
             @include('dashboard.layout.head')
+            @include('dashboard.layout.header')
             <!-- Sidebar -->
             @include('dashboard.layout.sidebar')
             <!-- Content -->
             @yield('main')
             <!-- Footer -->
-            @include('dashboard.layout.footer')
+            {{-- @include('dashboard.layout.footer') --}}
         </div>
     </div>
 

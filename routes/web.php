@@ -44,4 +44,8 @@ Route::group(['middleware' => ['auth']], function(){
 
     //Data User
     Route::get('/dashboard/user/index', [UserController::class, 'index'])->name('user.index');
+    Route::get('/dashboard/user/create', [UserController::class, 'create'])->name('user.create');
+    Route::get('/dashboard/user/edit', [UserController::class, 'edit'])->name('user.edit');
+    Route::resource('user', UserController::class);
+
 });
