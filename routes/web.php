@@ -6,6 +6,9 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ServiceController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,9 +46,12 @@ Route::group(['middleware' => ['auth']], function(){
     Route::post('/dashboard/profile/changeavatar', [ProfileController::class, 'changeavatar'])->name('profile.changeavatar');
 
     //Data User
-    Route::get('/dashboard/user/index', [UserController::class, 'index'])->name('user.index');
-    Route::get('/dashboard/user/create', [UserController::class, 'create'])->name('user.create');
-    Route::get('/dashboard/user/edit', [UserController::class, 'edit'])->name('user.edit');
     Route::resource('user', UserController::class);
+
+    //Category
+    Route::resource('category', CategoryController::class);
+
+    //Service
+    Route::resource('service', ServiceController::class);
 
 });

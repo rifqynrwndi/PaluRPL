@@ -10,27 +10,6 @@
                     <span class="title">Dashboard</span>
                 </a>
             </li>
-            {{-- @if (Auth::user()->role == 'admin') --}}
-            {{-- <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PK</h6>
-            @endif
-            @if (Auth::user()->role == 'admin')
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="{{ route('kriteriapemilikkost.index') }}">
-                        <span class="icon-holder">
-                            <i class="anticon anticon-appstore"></i>
-                        </span>
-                        <span class="title">Data Kriteria</span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="{{ route('perhitunganpemilikkost.index') }}">
-                        <span class="icon-holder">
-                            <i class="anticon anticon-form"></i>
-                        </span>
-                        <span class="title">Perhitungan</span>
-                    </a>
-                </li>
-            @endif --}}
 
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="{{ route('user.index') }}">
@@ -38,6 +17,24 @@
                         <i class="anticon anticon-user"></i>
                     </span>
                     <span class="title">User</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('category.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-form"></i>
+                    </span>
+                    <span class="title">Category</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('service.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Service</span>
                 </a>
             </li>
 
