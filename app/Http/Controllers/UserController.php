@@ -42,7 +42,12 @@ class UserController extends Controller
             }
         }
         User::create($data);
-        return redirect()->route('user.index')->with('success', 'User successfully created');
+
+        if ($request->roles === 'worker') {
+            return redirect()->route('worker.create')->with('success', 'User successfully created. You can now create a worker.');
+        } else {
+            return redirect()->route('user.index')->with('success', 'User successfully created.');
+        }
     }
 
     public function edit($id)

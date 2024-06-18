@@ -96,7 +96,7 @@
                                         <span class="selectgroup-button">Admin</span>
                                     </label>
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="roles" value="pekerja" class="selectgroup-input">
+                                        <input type="radio" name="roles" value="worker" class="selectgroup-input">
                                         <span class="selectgroup-button">Pekerja</span>
                                     </label>
                                     <label class="selectgroup-item">

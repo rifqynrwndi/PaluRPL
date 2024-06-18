@@ -39,6 +39,24 @@
             </li>
 
             <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('transaction.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Transaction</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('worker.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">Worker</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="{{ route('profile.index') }}">
                     <span class="icon-holder">
                         <i class="anticon anticon-user"></i>

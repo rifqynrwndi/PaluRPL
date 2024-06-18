@@ -17,8 +17,14 @@ class DatabaseSeeder extends Seeder
         // category
         \App\Models\Category::factory(4)->create();
 
-        // sevice
+        // service
         \App\Models\Service::factory(10)->create();
+
+        // workers
+        \App\Models\Worker::factory(10)->create();
+
+        // transaction
+        \App\Models\Transaction::factory(10)->create();
 
         $this->call([
             UserSeeder::class,

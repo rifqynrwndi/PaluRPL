@@ -49,4 +49,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Worker::class);
     }
+
+    public function scopeRole($query, $role)
+    {
+        return $query->where('roles', $role);
+    }
 }
