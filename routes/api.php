@@ -24,8 +24,3 @@ Route::post('/logout', [App\Http\Controllers\Api\AuthController::class, 'logout'
 
 Route::post('/login', [App\Http\Controllers\Api\AuthController::class, 'login']);
 
-// Category
-Route::get('/category', [App\Http\Controllers\Api\CategoryController::class, 'index']);
-
-// Service
-Route::get('/service', [App\Http\Controllers\Api\ServiceController::class, 'index']);
