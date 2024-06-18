@@ -56,13 +56,10 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('category', CategoryController::class);
 
     //Service
-    Route::resource('service', ServiceController::class);
 
     //Worker
-    Route::resource('worker', WorkerController::class);
 
     //Transaction
-    Route::resource('transaction', TransactionController::class);
 
     //Booking
     Route::resource('booking', BookingController::class);
