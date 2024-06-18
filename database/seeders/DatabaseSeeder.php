@@ -21,10 +21,16 @@ class DatabaseSeeder extends Seeder
         \App\Models\Service::factory(10)->create();
 
         // workers
-        \App\Models\Worker::factory(10)->create();
+        \App\Models\Worker::factory(5)->create();
 
         // transaction
-        \App\Models\Transaction::factory(10)->create();
+        \App\Models\Transaction::factory(5)->create();
+
+        // booking
+        \App\Models\Booking::factory(5)->create();
+
+        // review
+        \App\Models\Review::factory(5)->create();
 
         $this->call([
             UserSeeder::class,

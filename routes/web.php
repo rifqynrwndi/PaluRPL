@@ -10,6 +10,8 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\WorkerController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\ReviewController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -62,4 +64,10 @@ Route::group(['middleware' => ['auth']], function(){
     //Transaction
     Route::resource('transaction', TransactionController::class);
 
+    //Booking
+    Route::resource('booking', BookingController::class);
+
+    //Review
+    Route::resource('review', ReviewController::class);
+    Route::get('/api/booking-details/{id}', [ReviewController::class, 'getBookingDetails']);
 });

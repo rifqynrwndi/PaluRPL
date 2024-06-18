@@ -12,18 +12,9 @@
             </li>
 
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="{{ route('user.index') }}">
-                    <span class="icon-holder">
-                        <i class="anticon anticon-user"></i>
-                    </span>
-                    <span class="title">User</span>
-                </a>
-            </li>
-
-            <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="{{ route('category.index') }}">
                     <span class="icon-holder">
-                        <i class="anticon anticon-form"></i>
+                        <i class="anticon anticon-appstore"></i>
                     </span>
                     <span class="title">Category</span>
                 </a>
@@ -44,6 +35,33 @@
                         <i class="anticon anticon-appstore"></i>
                     </span>
                     <span class="title">Transaction</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('booking.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Booking</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('review.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Review</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('user.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">User</span>
                 </a>
             </li>
 
