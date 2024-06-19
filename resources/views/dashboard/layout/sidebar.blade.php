@@ -84,7 +84,11 @@
             </li>
 
             <li class="nav-item dropdown">
+<<<<<<< HEAD
                 <a class="dropdown-toggle" href="{{ route('dates.index') }}">
+=======
+                <a class="dropdown-toggle" href="{{ route('tanggal.index') }}">
+>>>>>>> origin/test
                     <span class="icon-holder">
                         <i class="anticon anticon-user"></i>
                     </span>
@@ -92,6 +96,18 @@
                 </a>
             </li>
 
+<<<<<<< HEAD
+=======
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('tahun.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">Tahun</span>
+                </a>
+            </li>
+
+>>>>>>> origin/test
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="{{ route('logout') }}">
                     <span class="icon-holder">
