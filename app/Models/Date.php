@@ -5,17 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Tanggal extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'start_date',
-        'end_date',
+        'startdate',
+        'enddate',
     ];
 
-    public function services()
-    {
-        return $this->hasMany(Service::class);
-    }
 }
