@@ -57,10 +57,13 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('category', CategoryController::class);
 
     //Service
+    Route::resource('service', ServiceController::class);
 
     //Worker
-    Route::resource('workers', CategoryController::class);
+    Route::resource('worker', WorkerController::class);
+
     //Transaction
+    Route::resource('transaction', TransactionController::class);
 
     //Booking
     Route::resource('booking', BookingController::class);
@@ -69,7 +72,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('review', ReviewController::class);
     Route::get('/api/booking-details/{id}', [ReviewController::class, 'getBookingDetails']);
 
-    //Tanggal
+    // Tanggal
     Route::resource('dates', TanggalController::class);
     Route::post('/calculate', [TanggalController::class, 'calculate']);
 });
