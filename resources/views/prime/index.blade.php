@@ -74,7 +74,6 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
-
         @if (isset($primes))
             <div class="output">
                 <h2>Bilangan Prima antara {{ $start_number }} dan {{ $end_number }}:</h2>

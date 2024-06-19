@@ -67,7 +67,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 
     //Prime
-    Route::get('/', [PrimeController::class, 'index']);
+    Route::get('/calculate', [PrimeController::class, 'index']);
     Route::post('/calculate', [PrimeController::class, 'calculate']);
 
 
