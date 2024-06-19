@@ -12,15 +12,7 @@ use App\Http\Controllers\WorkerController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ReviewController;
-<<<<<<< HEAD
 use App\Http\Controllers\TanggalController;
-<<<<<<< HEAD
-=======
-use App\Http\Controllers\TahunController;
->>>>>>> origin/test
-=======
-use App\Http\Controllers\PrimeController;
->>>>>>> origin/ivan
 
 use Illuminate\Support\Facades\Route;
 
@@ -47,12 +39,8 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/forgot-password', [AuthController::class, 'forgotpassword'])->name('forgotpassword');
 
-<<<<<<< HEAD
-Route::group(['middleware' => ['auth']], function(){
-=======
 
-Route::group(['middleware' => ['auth']], function () {
->>>>>>> origin/ivan
+Route::group(['middleware' => ['auth']], function(){
 
     //Dashboard
     Route::get('/dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index');
@@ -70,10 +58,7 @@ Route::group(['middleware' => ['auth']], function () {
 
     //Service
     Route::resource('service', ServiceController::class);
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/ivan
     //Worker
     Route::resource('worker', WorkerController::class);
 
@@ -83,29 +68,11 @@ Route::group(['middleware' => ['auth']], function () {
     //Booking
     Route::resource('booking', BookingController::class);
 
-
-    //Prime
-    Route::get('/', [PrimeController::class, 'index']);
-    Route::post('/calculate', [PrimeController::class, 'calculate']);
-
-
-
     //Review
     Route::resource('review', ReviewController::class);
     Route::get('/api/booking-details/{id}', [ReviewController::class, 'getBookingDetails']);
 
     // Tanggal
-<<<<<<< HEAD
     Route::resource('dates', TanggalController::class);
     Route::post('/calculate', [TanggalController::class, 'calculate']);
-=======
-    Route::resource('tanggal', TanggalController::class);
-    Route::post('/calculate', [TanggalController::class, 'calculate']);
-
-    // Tahun
-    Route::resource('tahun', TahunController::class);
-    Route::post('/calculate', [TahunController::class, 'calculate']);
-
-
->>>>>>> origin/test
 });
