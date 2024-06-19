@@ -82,6 +82,16 @@
                     <span class="title">Profile</span>
                 </a>
             </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('dates.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">Tanggal</span>
+                </a>
+            </li>
+
             <li class="nav-item dropdown">
                 <a class="dropdown-toggle" href="{{ route('logout') }}">
                     <span class="icon-holder">
