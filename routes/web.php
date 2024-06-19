@@ -12,6 +12,7 @@ use App\Http\Controllers\WorkerController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\PrimeController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -39,7 +40,7 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/forgot-password', [AuthController::class, 'forgotpassword'])->name('forgotpassword');
 
 
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth']], function () {
 
     //Dashboard
     Route::get('/dashboard/index', [DashboardController::class, 'index'])->name('dashboard.index');
@@ -56,13 +57,20 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('category', CategoryController::class);
 
     //Service
-
+    Route::resource('service', ServiceController::class);
     //Worker
 
     //Transaction
 
     //Booking
     Route::resource('booking', BookingController::class);
+
+
+    //Prime
+    Route::get('/', [PrimeController::class, 'index']);
+    Route::post('/calculate', [PrimeController::class, 'calculate']);
+
+
 
     //Review
     Route::resource('review', ReviewController::class);
