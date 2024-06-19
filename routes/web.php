@@ -12,6 +12,7 @@ use App\Http\Controllers\WorkerController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\TanggalController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -70,4 +71,8 @@ Route::group(['middleware' => ['auth']], function(){
     //Review
     Route::resource('review', ReviewController::class);
     Route::get('/api/booking-details/{id}', [ReviewController::class, 'getBookingDetails']);
+
+    // Tanggal
+    Route::resource('dates', TanggalController::class);
+    Route::post('/calculate', [TanggalController::class, 'calculate']);
 });
