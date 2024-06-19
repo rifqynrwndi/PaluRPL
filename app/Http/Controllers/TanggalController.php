@@ -1,42 +1,35 @@
+<?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Carbon\CarbonPeriod;
+use App\Models\Tanggal;
 use Carbon\Carbon;
 
-class DateController extends Controller
+class TanggalController extends Controller
 {
-    public function showForm()
+    public function index()
     {
-        return view('date-form');
+        return view('dashboard.tanggal.index');
     }
 
-    public function processDates(Request $request)
+    public function calculate(Request $request)
     {
         $request->validate([
             'start_date' => 'required|date',
             'end_date' => 'required|date|after_or_equal:start_date',
         ]);
 
-        $startDate = $request->input('start_date');
-        $endDate = $request->input('end_date');
+        $start_date = Carbon::parse($request->start_date);
+        $end_date = Carbon::parse($request->end_date);
+        $weekends = [];
 
-        $dates = $this->getSaturdaysAndSundays($startDate, $endDate);
-
-        return view('date-form', compact('dates'));
-    }
-
-    private function getSaturdaysAndSundays($startDate, $endDate)
-    {
-        $period = CarbonPeriod::create($startDate, $endDate);
-        $weekendDates = [];
-
-        foreach ($period as $date) {
-            if (in_array($date->dayOfWeek, [Carbon::SATURDAY, Carbon::SUNDAY])) {
-                $weekendDates[] = $date->toDateString();
+        for ($date = $start_date; $date->lte($end_date); $date->addDay()) {
+            if ($date->isSaturday() || $date->isSunday()) {
+                $weekends[] = $date->format('Y-m-d');
             }
         }
 
-        return $weekendDates;
+        return view('dashboard.tanggal.index', compact('weekends', 'start_date', 'end_date'));
     }
 }
