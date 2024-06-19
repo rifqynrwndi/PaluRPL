@@ -84,11 +84,20 @@
             </li>
 
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="{{ route('dates.index') }}">
+                <a class="dropdown-toggle" href="{{ route('tanggal.index') }}">
                     <span class="icon-holder">
                         <i class="anticon anticon-user"></i>
                     </span>
                     <span class="title">Tanggal</span>
+                </a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="{{ route('tahun.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">Tahun</span>
                 </a>
             </li>
 
