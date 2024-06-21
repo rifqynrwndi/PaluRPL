@@ -2,7 +2,7 @@
 @include('dashboard.layout.head')
 @include('dashboard.layout.header')
 
-@section('title', 'Services')
+@section('title', 'Transaction')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -13,13 +13,13 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Services</h1>
+                <h1>Transaction</h1>
                 <div class="section-header-button">
-                    <a href="{{ route('service.create') }}" class="btn btn-primary">Add New</a>
+                    <a href="{{ route('transaction.create') }}" class="btn btn-primary">Add New</a>
                 </div>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></div>
-                    <div class="breadcrumb-item">Services</div>
+                    <div class="breadcrumb-item">Transaction</div>
                 </div>
             </div>
             <div class="section-body">
@@ -28,9 +28,9 @@
                         @include('layouts.alert')
                     </div>
                 </div> --}}
-                <h2 class="section-title">Services</h2>
+                <h2 class="section-title">Transaction</h2>
                 <p class="section-lead">
-                    You can manage all Services, such as editing, deleting and more.
+                    You can manage all Transaction, such as editing, deleting and more.
                 </p>
 
 
@@ -38,13 +38,13 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4>All Services</h4>
+                                <h4>All Transaction</h4>
                             </div>
                             <div class="card-body">
                                 <div class="float-right">
-                                    <form method="GET" action="{{route ('service.index')}}">
+                                    <form method="GET" action="{{route ('transaction.index')}}">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search" name="service_name">
+                                            <input type="text" class="form-control" placeholder="Search" name="user_name">
                                             <div class="input-group-append">
                                                 <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                             </div>
@@ -59,38 +59,42 @@
                                         <tr>
 
                                             <th>Name</th>
-                                            <th>Category</th>
-                                            <th>Description</th>
-                                            <th>Price</th>
+                                            <th>Transaction Type</th>
+                                            <th>Amount</th>
+                                            <th>Transaction Date</th>
+                                            <th>Status</th>
                                             <th>Created At</th>
                                             <th>Action</th>
                                         </tr>
-                                        @foreach ($services as $service)
+                                        @foreach ($transactions as $transaction)
                                             <tr>
 
                                                 <td>
-                                                    {{ $service->service_name }}
+                                                    {{ $transaction->user ? $transaction->user->name : 'N/A' }}
                                                 </td>
                                                 <td>
-                                                    {{ $service->category ? $service->category->category_name : 'N/A' }}
+                                                    {{ $transaction->transaction_type }}
                                                 </td>
                                                 <td>
-                                                    {{ $service->description }}
+                                                    {{ $transaction->amount }}
                                                 </td>
                                                 <td>
-                                                    {{ $service->price }}
+                                                    {{ $transaction->transaction_date }}
                                                 </td>
                                                 <td>
-                                                    {{ $service->created_at }}</td>
+                                                    {{ $transaction->status }}
+                                                </td>
+                                                <td>
+                                                    {{ $transaction->created_at }}</td>
                                                 <td>
                                                     <div class="d-flex justify-content-center">
-                                                        <a href="{{ route('service.edit', $service->id) }}"
+                                                        <a href="{{ route('transaction.edit', $transaction->id) }}"
                                                             class="btn btn-sm btn-info btn-icon">
                                                             <i class="fas fa-edit"></i>
                                                             Edit
                                                         </a>
 
-                                                        <form action="{{ route('service.destroy', $service->id) }}" method="POST" class="ml-2">
+                                                        <form action="{{ route('transaction.destroy', $transaction->id) }}" method="POST" class="ml-2">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button class="btn btn-sm btn-danger btn-icon confirm-delete">
@@ -106,7 +110,7 @@
                                     </table>
                                 </div>
                                 <div class="float-right">
-                                    {{ $services->withQueryString()->links() }}
+                                    {{ $transactions->withQueryString()->links() }}
                                 </div>
                             </div>
                         </div>

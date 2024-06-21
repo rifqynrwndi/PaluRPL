@@ -29,86 +29,39 @@
                 <h2 class="section-title">Services</h2>
 
                 <div class="card">
-                    <form action="{{ route('booking.store') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('service.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="card-header">
                             <h4>Input Text</h4>
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <label>User Name</label>
-                                <select class="form-control selectric @error('user_id') is-invalid @enderror" name="user_id" id="user_id">
-                                    <option value="">Select User</option>
-                                    @foreach ($users as $user)
-                                        <option value="{{ $user->id }}" {{ old('user_id') == $user->id ? 'selected' : '' }}>{{ $user->name }}</option>
-                                    @endforeach
-                                </select>
-                                @error('user_id')
+                                <label>Name</label>
+                                <input type="text"
+                                    class="form-control @error('service_name') is-invalid @enderror"
+                                    name="service_name">
+                                @error('service_name')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Worker Name</label>
-                                <select class="form-control selectric @error('worker_id') is-invalid @enderror" name="worker_id" id="worker">
-                                    <option value="">Select Worker</option>
-                                    @foreach ($workers as $worker)
-                                        <option value="{{ $worker->id }}" {{ old('worker_id') == $worker->id ? 'selected' : '' }}>{{ $worker->name }}</option>
-                                    @endforeach
-                                </select>
-                                @error('worker_id')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label>Service</label>
-                                <select class="form-control selectric @error('service_id') is-invalid @enderror" name="service_id">
-                                    <option value="">Select Service</option>
-                                    @foreach ($services as $service)
-                                        <option value="{{ $service->id }}" {{old('service_id') == $service->id ? 'selected' : '' }}>{{ $service->service_name }}</option>
+                                <label>Category</label>
+                                <select class="form-control selectric @error('category_id') is-invalid @enderror" name="category_id">
+                                    <option value="">Select Category</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}" {{old('category_id') == $category->id ? 'selected' : '' }}>{{ $category->category_name }}</option>
                                     @endforeach
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="booking_date">Booking Date</label>
-                                <input type="date" id="booking_date" name="booking_date" class="form-control @error('booking_date') is-invalid @enderror" value="{{ old('booking_date') }}" required>
-                                @error('booking_date')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
+                                <label>Price</label>
+                                <input type="number" class="form-control" name="price">
                             </div>
                             <div class="form-group">
-                                <label for="start_time">Start Time</label>
-                                <input type="time" id="start_time" name="start_time" class="form-control @error('start_time') is-invalid @enderror" value="{{ old('start_time') }}" required>
-                                @error('start_time')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label for="end_time">End Time</label>
-                                <input type="time" id="end_time" name="end_time" class="form-control @error('end_time') is-invalid @enderror" value="{{ old('end_time') }}" required>
-                                @error('end_time')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label>Total Cost</label>
-                                <input type="number" class="form-control" name="total_cost">
-                            </div>
-                            <div class="form-group">
-                                <label>Status</label>
-                                <select class="form-control @error('status') is-invalid @enderror" name="status">
-                                    <option value="cancelled" {{ old('status') == 'cancelled' ? 'selected' : '' }}>Cancelled</option>
-                                    <option value="failed" {{ old('status') == 'failed' ? 'selected' : '' }}>Failed</option>
-                                    <option value="confirmed" {{ old('status') == 'confirmed' ? 'selected' : '' }}>Confirmed</option>
-                                </select>
-                                @error('status')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
+                                <label>Description</label>
+                                <input type="text" class="form-control" name="description">
                             </div>
                         </div>
                         <div class="card-footer text-right">

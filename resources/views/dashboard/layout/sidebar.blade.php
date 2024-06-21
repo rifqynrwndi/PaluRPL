@@ -26,7 +26,14 @@
                     <span class="title">Service</span>
                 </a>
             </li>
-
+            <li class="nav-item dropdown nav-item-hover">
+                <a class="dropdown-toggle" href="{{ route('transaction.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Transaction</span>
+                </a>
+            </li>
             <li class="nav-item dropdown nav-item-hover">
                 <a class="dropdown-toggle" href="{{ route('booking.index') }}">
                     <span class="icon-holder">
@@ -51,7 +58,14 @@
                     <span class="title">User</span>
                 </a>
             </li>
-
+            <li class="nav-item dropdown nav-item-hover">
+                <a class="dropdown-toggle" href="{{ route('worker.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">Worker</span>
+                </a>
+            </li>
             <li class="nav-item dropdown nav-item-hover">
                 <a class="dropdown-toggle" href="{{ route('profile.index') }}">
                     <span class="icon-holder">
@@ -60,37 +74,7 @@
                     <span class="title">Profile</span>
                 </a>
             </li>
-<<<<<<< HEAD
-
-            <li class="nav-item dropdown">
-<<<<<<< HEAD
-                <a class="dropdown-toggle" href="{{ route('dates.index') }}">
-=======
-                <a class="dropdown-toggle" href="{{ route('tanggal.index') }}">
->>>>>>> origin/test
-                    <span class="icon-holder">
-                        <i class="anticon anticon-user"></i>
-                    </span>
-                    <span class="title">Tanggal</span>
-                </a>
-            </li>
-
-<<<<<<< HEAD
-=======
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="{{ route('tahun.index') }}">
-                    <span class="icon-holder">
-                        <i class="anticon anticon-user"></i>
-                    </span>
-                    <span class="title">Tahun</span>
-                </a>
-            </li>
-
->>>>>>> origin/test
-            <li class="nav-item dropdown">
-=======
             <li class="nav-item dropdown nav-item-hover">
->>>>>>> origin/ivan
                 <a class="dropdown-toggle" href="{{ route('logout') }}">
                     <span class="icon-holder">
                         <i class="anticon anticon-lock"></i>
