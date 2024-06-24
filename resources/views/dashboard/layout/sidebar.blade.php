@@ -26,7 +26,14 @@
                     <span class="title">Service</span>
                 </a>
             </li>
-
+            <li class="nav-item dropdown nav-item-hover">
+                <a class="dropdown-toggle" href="{{ route('transaction.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-appstore"></i>
+                    </span>
+                    <span class="title">Transaction</span>
+                </a>
+            </li>
             <li class="nav-item dropdown nav-item-hover">
                 <a class="dropdown-toggle" href="{{ route('booking.index') }}">
                     <span class="icon-holder">
@@ -51,7 +58,14 @@
                     <span class="title">User</span>
                 </a>
             </li>
-
+            <li class="nav-item dropdown nav-item-hover">
+                <a class="dropdown-toggle" href="{{ route('worker.index') }}">
+                    <span class="icon-holder">
+                        <i class="anticon anticon-user"></i>
+                    </span>
+                    <span class="title">Worker</span>
+                </a>
+            </li>
             <li class="nav-item dropdown nav-item-hover">
                 <a class="dropdown-toggle" href="{{ route('profile.index') }}">
                     <span class="icon-holder">
@@ -60,10 +74,12 @@
                     <span class="title">Profile</span>
                 </a>
             </li>
+<<<<<<< HEAD
             <li class="nav-item dropdown">
 =======
+=======
+>>>>>>> 3198fb3ae23f6b19aaf6569cf491c31348058258
             <li class="nav-item dropdown nav-item-hover">
->>>>>>> origin/ivan
                 <a class="dropdown-toggle" href="{{ route('logout') }}">
                     <span class="icon-holder">
                         <i class="anticon anticon-lock"></i>

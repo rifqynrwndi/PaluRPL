@@ -2,7 +2,7 @@
 @include('dashboard.layout.head')
 @include('dashboard.layout.header')
 
-@section('title', 'Edit Service')
+@section('title', 'Edit Worker')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -18,67 +18,71 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Edit Service</h1>
+                <h1>Edit Worker</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></div>
-                    <div class="breadcrumb-item">Services</div>
+                    <div class="breadcrumb-item">Workers</div>
                 </div>
             </div>
 
             <div class="section-body">
-                <h2 class="section-title">Edit Service</h2>
+                <h2 class="section-title">Edit Worker</h2>
 
                 <div class="card">
-                    <form action="{{ route('service.update', $service) }}" method="POST">
+                    <form action="{{ route('worker.update', $worker) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="card-header">
-                            <h4>Service Details</h4>
+                            <h4>Worker Details</h4>
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <label>Service Name</label>
-                                <input type="text"
-                                    class="form-control @error('service_name') is-invalid @enderror"
-                                    name="service_name"
-                                    value="{{ old('service_name', $service->service_name) }}">
-                                @error('service_name')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label>Category</label>
-                                <select class="form-control selectric @error('category_id') is-invalid @enderror" name="category_id">
-                                    <option value="">Select Category</option>
-                                    @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}" {{ old('category_id', $service->category_id) == $category->id ? 'selected' : '' }}>{{ $category->category_name }}</option>
+                                <label>Name</label>
+                                <select class="form-control selectric @error('user_id') is-invalid @enderror" name="user_id">
+                                    <option value="">Select Worker</option>
+                                    @foreach ($users as $user)
+                                        <option value="{{ $user->id }}" {{ old('user_id', $worker->user_id) == $user->id ? 'selected' : '' }}>{{ $user->name }}</option>
                                     @endforeach
                                 </select>
-                                @error('category_id')
+                                @error('user_id')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Price</label>
-                                <input type="number"
-                                    class="form-control @error('price') is-invalid @enderror"
-                                    name="price"
-                                    value="{{ old('price', $service->price) }}">
-                                @error('price')
+                                <label>Rating</label>
+                                <input type="decimal"
+                                    class="form-control @error('rating') is-invalid @enderror"
+                                    name="rating"
+                                    value="{{ old('rating', $worker->rating) }}">
+                                @error('rating')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Description</label>
-                                <textarea class="form-control @error('description') is-invalid @enderror"
-                                    name="description">{{ old('description', $service->description) }}</textarea>
-                                @error('description')
+                                <label>Service</label>
+                                <select class="form-control selectric @error('service_id') is-invalid @enderror" name="service_id">
+                                    <option value="">Select Service</option>
+                                    @foreach ($services as $service)
+                                        <option value="{{ $service->id }}" {{ old('service_id', $worker->service_id) == $service->id ? 'selected' : '' }}>{{ $service->service_name }}</option>
+                                    @endforeach
+                                </select>
+                                @error('service_id')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label>Verified Status</label>
+                                <select class="form-control @error('verified_status') is-invalid @enderror" name="verified_status">
+                                    <option value="1" {{ old('verified_status', $worker -> verified_status) == 1 ? 'selected' : '' }}>Verified</option>
+                                    <option value="0" {{ old('verified_status', $worker -> verified_status) == 0 ? 'selected' : '' }}>Not Verified</option>
+                                </select>
+                                @error('verified_status')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
