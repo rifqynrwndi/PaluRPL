@@ -13,7 +13,7 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Transaction</h1>
+                <h1>Transactions</h1>
                 <div class="section-header-button">
                     <a href="{{ route('transaction.create') }}" class="btn btn-primary">Add New</a>
                 </div>
@@ -28,7 +28,7 @@
                         @include('layouts.alert')
                     </div>
                 </div> --}}
-                <h2 class="section-title">Transaction</h2>
+                <h2 class="section-title">Transactions</h2>
                 <p class="section-lead">
                     You can manage all Transaction, such as editing, deleting and more.
                 </p>
@@ -120,6 +120,8 @@
         </section>
     </div>
 @endsection
+
+@include('dashboard.layout.footer')
 
 @push('scripts')
     <!-- JS Libraies -->

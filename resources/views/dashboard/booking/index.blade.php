@@ -133,6 +133,8 @@
     </div>
 @endsection
 
+@include('dashboard.layout.footer')
+
 @push('scripts')
     <!-- JS Libraies -->
     <script src="{{ asset('library/selectric/public/jquery.selectric.min.js') }}"></script>

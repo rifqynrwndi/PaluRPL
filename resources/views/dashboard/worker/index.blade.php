@@ -13,13 +13,13 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Worker</h1>
+                <h1>Workers</h1>
                 <div class="section-header-button">
                     <a href="{{ route('worker.create') }}" class="btn btn-primary">Add New</a>
                 </div>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></div>
-                    <div class="breadcrumb-item">Worker</div>
+                    <div class="breadcrumb-item">Workers</div>
                 </div>
             </div>
             <div class="section-body">
@@ -28,7 +28,7 @@
                         @include('layouts.alert')
                     </div>
                 </div> --}}
-                <h2 class="section-title">Worker</h2>
+                <h2 class="section-title">Workers</h2>
                 <p class="section-lead">
                     You can manage all Workers, such as editing, deleting and more.
                 </p>
@@ -115,6 +115,8 @@
         </section>
     </div>
 @endsection
+
+@include('dashboard.layout.footer')
 
 @push('scripts')
     <!-- JS Libraies -->
